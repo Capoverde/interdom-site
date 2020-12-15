@@ -73,6 +73,10 @@ footer {
   margin: 0 auto;
 }
 
+//##############################################
+//################# hamburger   ################
+//##############################################
+
 .menu-btn {
   position: fixed;
   top: 10%;
@@ -219,5 +223,6 @@ footer {
     width: 300px;
     height: 400px;
     background: #e2f6fa;
+    cursor: grab;
   }
 }

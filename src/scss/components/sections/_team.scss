@@ -12,10 +12,22 @@
           position: relative;
           width: 100%;
           height: 100px;
-          background-image: url("/src/images/content/team-header-slider.jpg");
+          background-image: url("/src/images/content/slide-header-bg.jpg");
           background-repeat: no-repeat;
           background-position: 0 0;
           background-size: cover;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #0a2a43;
+            // z-index: 9999;
+            mix-blend-mode: color;
+          }
 
           &-picture {
             position: absolute;
@@ -27,6 +39,7 @@
             border: 2px solid $white;
             @include border-radius(100%);
             background: #000;
+            overflow: hidden;
           }
         }
 
