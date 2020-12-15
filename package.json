@@ -19,7 +19,9 @@
       "url": "https://pnikoloff.com"
     }
   ],
-  "dependencies": {},
+  "dependencies": {
+    "aos": "^3.0.0-beta.6"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",

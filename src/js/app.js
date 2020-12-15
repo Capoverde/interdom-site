@@ -1,6 +1,6 @@
 import '../scss/app.scss'
-
-/* swiper slider */
+/* libraries */
+import './aos'
 import './slider.js'
 
 /* Your JS Code goes here */
