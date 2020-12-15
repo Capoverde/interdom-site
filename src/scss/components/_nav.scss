@@ -229,7 +229,8 @@
 .menu-btn {
   position: fixed;
   top: 10%;
-  right: 0;
+  right: -6% !important;
+  @include border-radius(0);
   transform: translate(-50%, -50%);
   padding: 20px 5px;
   display: flex;
