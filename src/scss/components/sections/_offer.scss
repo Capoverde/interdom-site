@@ -1,0 +1,50 @@
+.container {
+  border-bottom: 1px solid #000;
+  padding-bottom: 20px;
+}
+
+h2 {
+  @include fluidSize(10px, 30px);
+  font-weight: 600;
+}
+
+.offer__boxes {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  @include respond-below(md) {
+    flex-flow: wrap column;
+    padding: 20px 0;
+  }
+
+  a {
+    .offer-box {
+      display: flex;
+      flex-flow: wrap column;
+      align-items: center;
+
+      @include respond-below(md) {
+        margin-top: 20px;
+      }
+
+      p {
+        text-align: center;
+        padding: 20px;
+      }
+
+img{
+  width:50px;
+  height:60px;
+  @include border-radius(0);
+
+  svg{
+    path{
+      fill:$hero-color;
+    }
+  }
+}
+
+    }
+  }
+}

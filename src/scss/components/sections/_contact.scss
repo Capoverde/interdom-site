@@ -1,0 +1,54 @@
+.contact-sec {
+  color:$white;
+  .container{
+    .row{
+    h2{
+      text-align:center;
+      padding: 20px 0;
+    }
+  }
+
+  .contact-content-box {
+    display: flex;
+    gap: 20px;
+
+    @include respond-below(md){
+      flex-direction:column-reverse;
+    }
+    }
+
+    .input-box{
+      display:flex;
+      gap:10px;
+
+      @include respond-below(md){
+        flex-direction:column;
+      }
+    }
+
+    input,textarea{
+      padding:10px;
+      @include border-radius(5px);
+      border:2px solid $white;
+      outline:none;
+      background:transparent;
+      color:$white;
+      font-family: 'Poppins', sans-serif;
+      flex-grow:1;
+    }
+  }
+
+  input::placeholder,
+  textarea::placeholder{
+    color:$white;
+  }
+
+  textarea{
+    width:100%;
+  }
+
+  input[type="submit"]{
+    cursor:pointer;
+  }
+
+}

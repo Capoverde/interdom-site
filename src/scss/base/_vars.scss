@@ -1,0 +1,38 @@
+/**
+ * Variables
+*/
+
+/* Typography */
+/* Breakpoints */
+/* Paths */
+/* Grid setup */
+/* Colour palette */
+$black: #000;
+$white: #fff;
+
+$body-background-color: $white;
+$brand-color: $white;
+$foreground-color: #161616;
+$caption-color: #464646;
+$accent-color: #999;
+$link-color: #213e7c;
+$main-c: #ffffff;
+$menu-btn-border-c: #eeeeee;
+$hero-color:navy;
+
+/* Components */
+
+// backgrounds:
+$header-bg: radial-gradient(circle, rgba(15, 147, 204, 1) 0%, rgba(11, 2, 171, 1) 100%);
+$nav-bg: transparent;
+$menu-bg: transparent;
+$bar-bg: $white;
+
+// widts & heights:
+
+$menu-btn-width: 40px;
+$menu-btn-height: 40px;
+
+$burger-width: 30px;
+$burger-height: 2px;
+// widts & heights:
