@@ -1,83 +1,45 @@
 .rescue-sec {
-
-  
-
   .container {
-    position:relative;
+    position: relative;
     display: flex;
     justify-content: space-between;
-    border:none;
-
-    hr{
-    position:absolute;
-    bottom:0;
-    left:50%;
-    width:60%;
-    height:1px;
-    background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  }
+    border: none;
 
     @include respond-below(md) {
       flex-flow: wrap column;
     }
 
     .rescue-box {
-      width: 40%;
-
-      @include respond-below(md) {
-        width: 100%;
-      }
-    }
-
-    .rescue-box1 {
-
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
 
       h2,
       p,
       a {
         color: $white;
+        text-align: center;
 
         @include respond-below(md) {
           margin-top: 20px;
         }
       }
 
-      p{
-        padding:50px 0;
+      p {
+        padding: 50px 0;
         @include fluidSize(12px, 20px);
       }
 
       .rescue-phone {
-        position:relative;
-        left: 50%; 
-        transform: translate(-50%, -50%);
-        text-align: center;
         @include fluidSize(20px, 40px);
-        border:2px solid $white;
+        border: 2px solid $white;
         padding: 10px 50px;
         @include border-radius(50px);
         animation: pulse 3s infinite ease-in-out;
         -webkit-animation: pulse 3s infinite ease-in-out;
         overflow: hidden;
-
-
-        &::before{
-          position: absolute; 
-          top: 0; 
-          bottom:0;
-          left: 50%; 
-          transform: translate(-50%, -50%);
-          height:100px;
-          width: 40px;
-          background-color: lighten($hero-color, 30);
-          @include transition(all, .5s);
-        }
-
-
-
-        &:hover{
-
-        }
 
         @include respond-below(md) {
           padding-bottom: 20px;

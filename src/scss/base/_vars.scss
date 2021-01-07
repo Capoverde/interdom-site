@@ -18,18 +18,20 @@ $accent-color: #999;
 $link-color: #213e7c;
 $main-c: #ffffff;
 $menu-btn-border-c: #eeeeee;
-$hero-color:navy;
+$hero-color: #e2f6fa;
 
 /* Components */
 
+// $header-bg: radial-gradient(circle, #0f93cc 0%, #0b02ab 100%);
+// $header-bg: radial-gradient(circle, #298eb9 0%, #1f529e 100%);
+
 // backgrounds:
-$header-bg: radial-gradient(circle, rgba(15, 147, 204, 1) 0%, rgba(11, 2, 171, 1) 100%);
+$header-bg: radial-gradient(circle, #25292b 0%, #101216 100%);
 $nav-bg: transparent;
 $menu-bg: transparent;
 $bar-bg: $white;
 
 // widts & heights:
-
 $menu-btn-width: 40px;
 $menu-btn-height: 40px;
 

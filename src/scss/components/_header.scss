@@ -103,7 +103,9 @@
     }
 
     img {
-      width: 60%;
+      width: 80%;
+      // background: $hero-color;
+      // mix-blend-mode: screen;
       @include respond-below(md) {
         display: none;
       }
