@@ -1,5 +1,7 @@
 .team-sec {
   .container {
+    flex-flow: column wrap;
+
     h2,
     p {
       padding: 20px 0;

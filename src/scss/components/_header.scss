@@ -7,6 +7,18 @@
   gap: 60px;
   padding-top: 120px;
 
+  &::before {
+    content: "";
+    width: 108%;
+    height: 150px;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-53%, -50%) rotate(5deg);
+  }
+
   @include respond-below(md) {
     perspective: 75rem;
     overflow: hidden;
@@ -34,6 +46,7 @@
     position: absolute;
     @include fluidSize(30px, 60px);
     line-height: 1.2;
+    text-align: left;
   }
 
   p {
@@ -42,6 +55,7 @@
 
   p.about-text {
     columns: 2;
+    text-align: left;
   }
 
   .rescue-header {

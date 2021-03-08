@@ -1,48 +1,96 @@
 .container {
   padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 h2 {
   @include fluidSize(10px, 30px);
   font-weight: 600;
+  text-align: center;
 }
 
-.offer__boxes {
-  padding-top: 20px;
+h3 {
+  text-align: center;
+}
+
+.offer__article {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 
-  @include respond-below(md) {
-    flex-flow: wrap column;
-    padding: 20px 0;
+  width: 45%;
+  margin: 30px auto;
+  overflow-y: hidden;
+  -webkit-box-shadow: 6px 1px 15px 3px rgba(0, 0, 0, 0.32);
+  box-shadow: 6px 1px 15px 3px rgba(0, 0, 0, 0.32);
+
+  .article--header,
+  .article--footer {
+    background: $article-bg;
+    width: 100%;
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 13px;
   }
 
-  a {
-    .offer-box {
-      display: flex;
-      flex-flow: wrap column;
-      align-items: center;
+  .article--header {
+    height: 200px;
 
-      @include respond-below(md) {
-        margin-top: 20px;
+    p {
+      font-size: 13px;
+      padding-top: 20px;
+    }
+
+    .text-account {
+      font-size: 12px;
+    }
+  }
+
+  .article--footer {
+    z-index: 10000;
+
+    .more {
+      color: $link-color;
+      cursor: pointer;
+    }
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.article--contentBox {
+  padding: 0 40px;
+  height: auto;
+
+  ul {
+    height: 0;
+    visibility: hidden;
+
+    li {
+      margin-top: 0;
+      padding-left: 20px;
+      position: relative;
+      font-size: 13px;
+
+      .offer__item—-sub {
+        padding-left: 20px;
       }
 
-      p {
-        text-align: center;
-        padding: 20px;
-      }
-
-      img {
-        width: 50px;
-        height: 60px;
-        @include border-radius(0);
-
-        svg {
-          path {
-            fill: $hero-color;
-          }
-        }
+      &::before {
+        position: absolute;
+        left: -5px;
+        top: 0;
+        content: "✔️";
       }
     }
   }
+}
+
+.showList {
+  height: 100% !important;
+  visibility: visible !important;
+  @include transition(all, 0.35s);
 }

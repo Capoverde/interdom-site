@@ -15,21 +15,26 @@ $brand-color: $white;
 $foreground-color: #161616;
 $caption-color: #464646;
 $accent-color: #999;
-$link-color: #213e7c;
+$link-color: #3b5998;
 $main-c: #ffffff;
 $menu-btn-border-c: #eeeeee;
 $hero-color: #e2f6fa;
 
 /* Components */
 
-// $header-bg: radial-gradient(circle, #0f93cc 0%, #0b02ab 100%);
-// $header-bg: radial-gradient(circle, #298eb9 0%, #1f529e 100%);
+// $header-bg: radial-gradient(#0f93cc 0%, #0b02ab 100%);
+// $header-bg: radial-gradient(circle, #1084b6 0%, #30548b 100%);
+// $header-bg: #99c0e0;
+// $header-bg: #8b9dc3;
+$header-bg: $link-color;
 
 // backgrounds:
-$header-bg: radial-gradient(circle, #25292b 0%, #101216 100%);
+// $header-bg: radial-gradient(circle, #25292b 0%, #101216 100%);
 $nav-bg: transparent;
 $menu-bg: transparent;
 $bar-bg: $white;
+// $article-bg: #f7f7f7;
+$article-bg: $hero-color;
 
 // widts & heights:
 $menu-btn-width: 40px;

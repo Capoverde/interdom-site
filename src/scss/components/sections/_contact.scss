@@ -1,54 +1,32 @@
 .contact-sec {
-  color:$white;
-  .container{
-    .row{
-    h2{
-      text-align:center;
-      padding: 20px 0;
-    }
-  }
-
-  .contact-content-box {
+  .row {
     display: flex;
-    gap: 20px;
+    gap: 4%;
 
-    @include respond-below(md){
-      flex-direction:column-reverse;
+    .contact-box,
+    .formBox {
+      flex-basis: 45%;
     }
-    }
 
-    .input-box{
-      display:flex;
-      gap:10px;
+    .contact-box {
+      p {
+        padding: 0 4rem 0 0;
+      }
 
-      @include respond-below(md){
-        flex-direction:column;
+      address {
+        padding: 1.2rem 0;
+      }
+
+      .contact-list {
+        padding-left: 1.2rem;
+
+        li {
+          margin-top: 1rem;
+        }
       }
     }
 
-    input,textarea{
-      padding:10px;
-      @include border-radius(5px);
-      border:2px solid $white;
-      outline:none;
-      background:transparent;
-      color:$white;
-      font-family: 'Poppins', sans-serif;
-      flex-grow:1;
+    .formBox {
     }
   }
-
-  input::placeholder,
-  textarea::placeholder{
-    color:$white;
-  }
-
-  textarea{
-    width:100%;
-  }
-
-  input[type="submit"]{
-    cursor:pointer;
-  }
-
 }

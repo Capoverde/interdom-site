@@ -42,6 +42,8 @@ function clickHandler(e) {
   e.preventDefault()
   const href = this.getAttribute('href')
   const offsetTop = document.querySelector(href).offsetTop - navbar.clientHeight
+  myNav.classList.remove('open')
+   menuBtn.classList.remove('open')
 
   scroll({
     top: offsetTop,
