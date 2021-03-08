@@ -1,10 +1,10 @@
 .page__header {
   position: relative;
-  height: auto;
+  height: 180vh;
   background: $header-bg;
   position: relative;
   display: flex;
-  gap: 60px;
+  // gap: 40px;
   padding-top: 120px;
 
   &::before {
@@ -54,12 +54,13 @@
   }
 
   p {
-    padding: 140px 0 20px 0;
+    padding: 140px 20px 20px 0;
   }
 
   p.about-text {
     columns: 2;
-    text-align: left;
+    text-align: justify;
+    column-gap: 20px;
   }
 
   .rescue-header {

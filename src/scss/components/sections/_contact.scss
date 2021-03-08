@@ -39,9 +39,33 @@
           }
         }
       }
+
+      .map-box {
+        margin: 40px 0;
+
+        position: relative;
+        img {
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #0a2a43;
+          // z-index: 9999;
+          mix-blend-mode: color;
+        }
+      }
     }
 
     .formBox {
+      padding: 10px;
+      -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.37);
+      box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.37);
+
       @include respond-below(md) {
         margin-top: 2rem;
 
@@ -86,6 +110,7 @@
         padding: 5px 20px;
         border: 1px solid $main-c;
         @include border-radius(28px);
+        cursor: pointer;
       }
     }
   }

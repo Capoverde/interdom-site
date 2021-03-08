@@ -1,12 +1,12 @@
 const myNav = document.querySelector('.page__nav')
 console.log(myNav)
 
-// window.addEventListener('scroll', e => {
-//   e.preventDefault();
-//   (document.body.scrollTop >= 100 ||
-//     document.documentElement.scrollTop >= 100)
-//     ? myNav.classList.add('nav-colored') : myNav.classList.remove('nav-colored')
-// })
+window.addEventListener('scroll', e => {
+  e.preventDefault();
+  (document.body.scrollTop >= 100 ||
+    document.documentElement.scrollTop >= 100)
+    ? myNav.classList.add('nav-colored') : myNav.classList.remove('nav-colored')
+})
 
 // hamburger & nav toggling:
 const menuBtn = document.querySelector('.menu-btn')
