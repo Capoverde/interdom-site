@@ -4,8 +4,11 @@
   background: $header-bg;
   position: relative;
   display: flex;
-  // gap: 40px;
   padding-top: 120px;
+
+  @include respond-below(md) {
+    height: auto;
+  }
 
   &::before {
     content: "";
@@ -46,6 +49,12 @@
     color: $white;
   }
 
+  .row-rescue {
+    @include respond-below(md) {
+      display: none;
+    }
+  }
+
   h2 {
     position: absolute;
     @include fluidSize(30px, 60px);
@@ -55,12 +64,20 @@
 
   p {
     padding: 140px 20px 20px 0;
+
+    @include respond-below(md) {
+      padding-top: 160px;
+    }
   }
 
   p.about-text {
     columns: 2;
     text-align: justify;
     column-gap: 20px;
+
+    @include respond-below(md) {
+      columns: 1;
+    }
   }
 
   .rescue-header {
