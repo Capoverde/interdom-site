@@ -14,7 +14,7 @@
     width: 12rem;
     height: 100vh;
     overflow: auto;
-    background: darken($white, 5);
+    background: $hero-color;
     transform: rotateY(-90deg);
     transform-origin: top left;
     transition: transform 0.65s;

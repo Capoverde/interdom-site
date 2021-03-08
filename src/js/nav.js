@@ -1,12 +1,12 @@
 const myNav = document.querySelector('.page__nav')
 console.log(myNav)
 
-window.addEventListener('scroll', e => {
-  e.preventDefault();
-  (document.body.scrollTop >= 100 ||
-    document.documentElement.scrollTop >= 100)
-    ? myNav.classList.add('nav-colored') : myNav.classList.remove('nav-colored')
-})
+// window.addEventListener('scroll', e => {
+//   e.preventDefault();
+//   (document.body.scrollTop >= 100 ||
+//     document.documentElement.scrollTop >= 100)
+//     ? myNav.classList.add('nav-colored') : myNav.classList.remove('nav-colored')
+// })
 
 // hamburger & nav toggling:
 const menuBtn = document.querySelector('.menu-btn')
@@ -37,13 +37,13 @@ for (const link of links) {
   link.addEventListener('click', clickHandler)
 }
 
-function clickHandler(e) {
+function clickHandler (e) {
   console.log('klik')
   e.preventDefault()
   const href = this.getAttribute('href')
   const offsetTop = document.querySelector(href).offsetTop - navbar.clientHeight
   myNav.classList.remove('open')
-   menuBtn.classList.remove('open')
+  menuBtn.classList.remove('open')
 
   scroll({
     top: offsetTop,

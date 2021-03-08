@@ -2,6 +2,11 @@
   .row {
     display: flex;
     gap: 4%;
+    color: $main-c;
+
+    @include respond-below(md) {
+      flex-flow: column wrap;
+    }
 
     .contact-box,
     .formBox {
@@ -11,6 +16,12 @@
     .contact-box {
       p {
         padding: 0 4rem 0 0;
+
+        @include respond-below(md) {
+          text-align: center;
+          padding: 2rem 1rem;
+          font-size: 13px;
+        }
       }
 
       address {
@@ -22,11 +33,65 @@
 
         li {
           margin-top: 1rem;
+
+          a {
+            color: $main-c;
+          }
         }
       }
     }
 
     .formBox {
+      @include respond-below(md) {
+        margin-top: 2rem;
+
+        h2 {
+          padding: 1.3rem 0;
+        }
+      }
     }
+
+    .form {
+      label {
+        margin-top: 5px;
+      }
+
+      input:not(input[type="submit"]) {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid $main-c;
+        width: 100%;
+        color: $main-c;
+        padding: 5px;
+      }
+
+      textarea {
+        margin-top: 20px;
+        background: transparent;
+        color: $main-c;
+        border: 1px solid $main-c;
+        width: 100%;
+        padding: 5px;
+        font-family: inherit;
+
+        &::placeholder {
+          color: $main-c;
+        }
+      }
+
+      input[type="submit"] {
+        color: $main-c;
+        font-size: 1rem;
+        margin-top: 10px;
+        padding: 5px 20px;
+        border: 1px solid $main-c;
+        @include border-radius(28px);
+      }
+    }
+  }
+
+  .info {
+    margin-top: 10px;
+    font-size: 12px;
   }
 }

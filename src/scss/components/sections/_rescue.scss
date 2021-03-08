@@ -42,7 +42,7 @@
         overflow: hidden;
 
         @include respond-below(md) {
-          padding-bottom: 20px;
+          padding: 20px 50px;
         }
       }
     }

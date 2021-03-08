@@ -105,4 +105,9 @@ h3 {
   height: 100% !important;
   visibility: visible !important;
   @include transition(all, 0.35s);
+  padding: 20px 0;
+
+  li {
+    padding-top: 10px;
+  }
 }
