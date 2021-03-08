@@ -17,6 +17,10 @@
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-53%, -50%) rotate(5deg);
+
+    @include respond-below(md) {
+      top: 104%;
+    }
   }
 
   @include respond-below(md) {
@@ -177,6 +181,13 @@
 //   greek,
 //   vietnamese
 // );
+
+@include respond-below(md) {
+  .page__header--slider {
+    margin-top: -70px;
+  }
+}
+
 @font-face {
   font-family: "demurecontrols";
   src: url("http://cssslider.com/sliders/pen/demurecontrols.eot?cssslidertheme=demure");
