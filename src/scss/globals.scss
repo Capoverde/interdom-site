@@ -46,6 +46,11 @@ footer {
 
 .contact-sections-wrapper {
   background: $header-bg;
+  clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%);
+
+  @include respond-below(md) {
+    clip-path: polygon(0 0, 100% 2%, 100% 100%, 0% 100%);
+  }
 }
 
 .row {
@@ -100,7 +105,7 @@ footer {
 
   @include respond-below(md) {
     display: block;
-    left:96%;
+    left: 96%;
   }
 
   &__burger {

@@ -1,4 +1,6 @@
 .contact-sec {
+  position: relative;
+
   .row {
     display: flex;
     gap: 4%;
@@ -26,6 +28,7 @@
 
       address {
         padding: 1.2rem 0;
+        font-style: italic;
       }
 
       .contact-list {
@@ -40,12 +43,17 @@
         }
       }
 
+      .working__days {
+        margin-left: 20px;
+
+        .hours {
+          padding-left: 20px;
+        }
+      }
+
       .map-box {
         margin: 40px 0;
-
         position: relative;
-        img {
-        }
 
         &::before {
           content: "";

@@ -1,4 +1,6 @@
 .rescue-sec {
+  position: relative;
+
   .container {
     position: relative;
     display: flex;
@@ -10,6 +12,7 @@
     }
 
     .rescue-box {
+      padding-top: 140px;
       width: 100%;
       display: flex;
       justify-content: center;
