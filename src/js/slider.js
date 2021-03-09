@@ -13,9 +13,9 @@ const swiper = new Swiper('.swiper-container', {
     modifier: 1,
     slideShadows: true
   },
-  loop: true
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: true
-  // }
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true
+  }
 })
