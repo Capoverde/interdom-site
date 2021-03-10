@@ -74,6 +74,11 @@
       -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.37);
       box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.37);
 
+      p.text {
+        padding: 1em 2em;
+        text-align: center;
+      }
+
       @include respond-below(md) {
         margin-top: 2rem;
 
@@ -84,17 +89,24 @@
     }
 
     .form {
-      label {
-        margin-top: 5px;
-      }
-
       input:not(input[type="submit"]) {
+        display: inline-block;
+        padding-top: 1em;
+        all: unset;
         background: transparent;
         border: none;
         border-bottom: 1px solid $main-c;
-        width: 100%;
+        width: 90%;
         color: $main-c;
         padding: 5px;
+        // microsoft edge
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+
+        &::placeholder {
+          color: inherit;
+        }
       }
 
       textarea {

@@ -724,29 +724,46 @@ Dział IT
             </ul>
 
          
-<div class="map-box" data-aos="fade-up" >
-  <img src="../images/content/mapa.png" alt="mapa">
-</div>
+              <div class="map-box" data-aos="fade-up" >
+                <img src="../images/content/mapa.png" alt="mapa">
+              </div>
 
 
           </div>
           <div class="formBox" data-aos="fade-up" data-aos-dealy="700">
             <h2>Skontaktuj się z nami!</h2>
+            <p class="text">
+              Uprzejmie informujemy, że odpowiemy na Pańśtwa wiadomość najszybciej jak to tylko możliwe. 
+            </p>
             <form class="form" action="" id="myForm" novalidate>
-              <label for="firstName">Imię</label><sup>*</sup>
-              <input type="text" name="First Name" id="firstName">
+            <div class="row">
+              <sup>*</sup>
+              <input type="text" name="First Name" id="firstName" placeholder="Imię" autocomplete="off">
               <span class="helper-text"></span><br />
-              <label for="lastName">Nazwisko</label><sup>*</sup>
-              <input type="text" name="Last Name" id="lastName">
-              <span class="helper-text"></span><br />
-              <label for="tel">Telefon</label><sup>*</sup>
-              <input type="telephone" name="tel" id="tel">
-              <label for="property">Adres nieruchomości</label><sup>*</sup>
-              <input type="text" name="property" id="prop">
-              <span class="helper-text"></span><br />
-              <label for="email">e-mail</label><sup>*</sup><br />
-              <input type="email" name="Email" id="email">
-              <span class="helper-text"></span><br />
+              <sup>*</sup>
+              <input type="text" name="Last Name" id="lastName" placeholder="Nazwisko">
+              <span class="helper-text"></span>
+            </div>
+
+            <div class="row">
+              <sup>*</sup>
+              <input type="telephone" name="tel" id="tel" placeholder="Telefon1:">
+              <input type="telephone" name="tel" id="tel" placeholder="Telefon2:">
+            </div>
+
+       
+             <div class="row">
+              <sup>*</sup>
+              <input type="email" name="Email" id="email" placeholder="e-mail">
+              <input type="email" name="Email" id="email" placeholder="powtórz e-mail">
+              <span class="helper-text"></span>
+            </div>
+            
+            <div class="row">
+              <sup>*</sup>
+              <input type="text" name="property" id="prop" placeholder="Adres nieruchomości">
+              <span class="helper-text"></span>
+            </div>
               <textarea name="message" id="message" cols="30" rows="10" placeholder="Wiadomość..."></textarea>
               <span class="helper-text"></span><br />
               <input type="submit" class="btn" id="submitBtn" value="Wyślij!" />
