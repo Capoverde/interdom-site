@@ -82,6 +82,10 @@
       -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.37);
       box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.37);
 
+      @include respond-below(md) {
+        box-shadow: none;
+      }
+
       p.text {
         padding: 1em 2em;
         text-align: center;
