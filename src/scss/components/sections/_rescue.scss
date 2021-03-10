@@ -32,7 +32,7 @@
 
       p {
         padding: 50px 0;
-        @include fluidSize(12px, 20px);
+        @include fluidSize(16px, 20px);
       }
 
       .rescue-phone {

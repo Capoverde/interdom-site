@@ -230,7 +230,6 @@
   position: fixed;
   top: 10%;
   right: -6% !important;
-  @include border-radius(0);
   transform: translate(-50%, -50%);
   padding: 20px 5px;
   display: flex;
@@ -323,32 +322,6 @@
   }
 }
 
-#totop {
-  position: fixed;
-  bottom: 2%;
-  right: -50%;
-  transform: translate(-50%, -50%);
-  display: block;
-  font-size: 20px;
-  color: $white;
-  background: $link-color;
-  padding: 5px 10px;
-  cursor: pointer;
-  -webkit-box-shadow: 1px 0px 16px 4px rgba(0, 0, 0, 0.63);
-  box-shadow: 1px 0px 16px 4px rgba(0, 0, 0, 0.63);
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  z-index: 10000;
-  @include transition(all, 0.3s);
-
-  @include respond-below(md) {
-    bottom: 5%;
-  }
-}
-
 //================
 //  JS classes:
 //================
@@ -369,8 +342,4 @@
   @include respond-below(md) {
     background: $hero-color;
   }
-}
-
-#totop.showTop {
-  right: 2%;
 }

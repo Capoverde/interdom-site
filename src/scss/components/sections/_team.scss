@@ -2,19 +2,6 @@
   position: relative;
   padding-bottom: 100px;
 
-  .layer-box {
-    // width: 110%;
-    // height: 200px;
-    // z-index: 10000;
-    // // background: $white;
-    // position: absolute;
-    // left: 0;
-    // right: 0;
-    // bottom: 0;
-    // clip-path: polygon(0 65%, 99% 100%, 98% 100%, 0% 100%);
-    // background: #30548b;
-  }
-
   .container {
     flex-flow: column wrap;
 
@@ -22,6 +9,12 @@
     p {
       padding: 20px 0;
       text-align: center;
+    }
+
+    p.text {
+      @include respond-below(md) {
+        font-size: 15px;
+      }
     }
 
     .swiper-slide {

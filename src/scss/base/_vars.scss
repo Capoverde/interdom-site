@@ -17,7 +17,6 @@ $caption-color: #464646;
 $accent-color: #999;
 $link-color: #3b5998;
 $main-c: #ffffff;
-$menu-btn-border-c: #eeeeee;
 $hero-color: #e2f6fa;
 
 /* Components */
@@ -29,11 +28,9 @@ $header-bg: radial-gradient(circle at 50%, #3967c9 10%, #30548b 90%);
 // $header-bg: $link-color;
 
 // backgrounds:
-// $header-bg: radial-gradient(circle, #25292b 0%, #101216 100%);
 $nav-bg: transparent;
 $menu-bg: transparent;
 $bar-bg: $white;
-// $article-bg: #f7f7f7;
 $article-bg: $hero-color;
 
 // widts & heights:
@@ -42,4 +39,3 @@ $menu-btn-height: 40px;
 
 $burger-width: 30px;
 $burger-height: 2px;
-// widts & heights:
