@@ -1,6 +1,10 @@
 .contact-sec {
   position: relative;
 
+  h2 {
+    text-align: center;
+  }
+
   .row {
     display: flex;
     gap: 4%;
@@ -16,8 +20,13 @@
     }
 
     .contact-box {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+
       p {
-        padding: 0 4rem 0 0;
+        padding: 1em 2em;
+        text-align: center;
 
         @include respond-below(md) {
           text-align: center;
