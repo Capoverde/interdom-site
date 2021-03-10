@@ -51,6 +51,12 @@
             color: $main-c;
           }
         }
+
+        .mail {
+          @include respond-below(md) {
+            font-size: 15px;
+          }
+        }
       }
 
       .working__days {
