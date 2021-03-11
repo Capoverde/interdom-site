@@ -5,25 +5,11 @@
   position: relative;
   display: flex;
   padding-top: 120px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 91%);
 
   @include respond-below(md) {
     height: auto;
-  }
-
-  &::before {
-    content: "";
-    width: 108%;
-    height: 150px;
-    background: #fff;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-53%, -50%) rotate(5deg);
-
-    @include respond-below(md) {
-      top: 104%;
-    }
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
   }
 
   @include respond-below(md) {

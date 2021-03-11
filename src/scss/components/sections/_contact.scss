@@ -114,7 +114,8 @@
 
     .form {
       input:not(input[type="submit"]) {
-        display: inline-block;
+        position: relative;
+        display: block;
         padding-top: 1em;
         all: unset;
         background: transparent;
@@ -129,6 +130,7 @@
         -moz-appearance: none;
 
         &::placeholder {
+          position: relative;
           color: inherit;
         }
       }
