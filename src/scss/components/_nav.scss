@@ -335,8 +335,8 @@
 
 .nav-colored {
   background: $header-bg;
-  -webkit-box-shadow: 1px 0px 16px 4px rgba(0, 0, 0, 0.63);
-  box-shadow: 1px 0px 16px 4px rgba(0, 0, 0, 0.63);
+  // -webkit-box-shadow: 1px 0px 16px 4px rgba(0, 0, 0, 0.63);
+  // box-shadow: 1px 0px 16px 4px rgba(0, 0, 0, 0.63);
 
   @include respond-below(md) {
     background: $hero-color;
