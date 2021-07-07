@@ -1,5 +1,7 @@
 .rescue-sec {
   position: relative;
+  background: linear-gradient(to right, hsl(0, 90%, 61%) , hsl(240, 97%, 66%));
+  background-blend-mode: overlay;
 
   .container {
     position: relative;
