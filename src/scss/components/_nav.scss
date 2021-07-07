@@ -119,7 +119,7 @@
         }
 
         &::after {
-          background-color: $link-color;
+          // background-color: $link-color;
           content: attr(data-text);
           position: absolute;
           left: 0;
