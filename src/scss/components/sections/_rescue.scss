@@ -1,21 +1,31 @@
 .rescue-sec {
   position: relative;
-  background: linear-gradient(to right, hsl(0, 90%, 61%) , hsl(240, 97%, 66%));
-  background-blend-mode: overlay;
+
+    &::after{
+      content:'';
+      position: absolute;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      width:100%;
+      height:100%;
+      background: linear-gradient(to right, hsl(0, 90%, 61%) , hsl(240, 97%, 66%));
+      // background-blend-mode: overlay;
+      opacity:.5;
+}
+
 
   .container {
     position: relative;
     display: flex;
-    justify-content: space-between;
-    border: none;
 
     @include respond-below(md) {
       flex-flow: wrap column;
     }
 
     .rescue-box {
-      padding-top: 140px;
-      width: 100%;
+      flex-basis: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -51,6 +61,18 @@
         }
       }
     }
+  }
+
+  .rescue-box1{
+    z-index: 10;
+    padding: 20px;
+  }
+
+  .rescue-box2{
+    background-image: url('/src/images/content/call-center.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 }
 
