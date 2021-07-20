@@ -1,168 +1,72 @@
-.contact-sec {
-  position: relative;
 
-  h2 {
+.contact-section{
+  padding-top: 120px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 91%);
+  // ogarnąć poligona!
+
+
+  h2.title,
+  p.text{
+    color: $main-c;
+  }
+
+  p.text{
     text-align: center;
   }
 
-  .row {
+  .contact-icons{
     display: flex;
-    gap: 4%;
-    color: $main-c;
+    justify-content: space-evenly;
 
-    @include respond-below(md) {
-      flex-flow: column wrap;
-    }
-
-    .contact-box,
-    .formBox {
-      flex-basis: 45%;
-    }
-
-    .contact-box {
+    .contact-box{
       display: flex;
+      flex-basis: fill;
       flex-flow: column wrap;
+      justify-content: center;
       align-items: center;
 
-      p {
-        padding: 1em 2em;
-        text-align: center;
 
-        @include respond-below(md) {
-          text-align: center;
-          padding: 1rem 0.3rem;
-          font-size: 16px;
+     .contact-link{
+       padding: 20px 0;
+       position: relative;
+       width: 60px;
+       height: 60px;
+       background: #2196f3;
+       color: $white;
+       padding: 10px;
+       @include fluidSize(10px, 28px);
+       @include transition(all, 0.45s);
+       @include border-radius(100%);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+        &:hover {
+          background: #2196f3;
+          box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+          @include border-radius(100%);
         }
       }
 
-      address {
-        padding: 1.2rem 0;
-        font-style: italic;
-      }
-
-      .contact-list {
-        padding-left: 1.2rem;
-        margin-bottom: 2em;
-
-        li {
-          margin-top: 1rem;
-
-          a {
-            color: $main-c;
-          }
-        }
-
-        .mail {
-          @include respond-below(md) {
-            font-size: 15px;
-          }
-        }
-      }
-
-      .working__days {
-        .hours {
-          padding-left: 20px;
-        }
-      }
-
-      .map-box {
-        margin: 40px 0;
-        position: relative;
-
-        &::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: #0a2a43;
-          // z-index: 9999;
-          mix-blend-mode: color;
-        }
-      }
-    }
-
-    .formBox {
-      padding: 10px;
-      -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.37);
-      box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.37);
-
-      @include respond-below(md) {
-        box-shadow: none;
-      }
-
-      p.text {
-        padding: 1em 2em;
-        text-align: center;
-      }
-
-      @include respond-below(md) {
-        margin-top: 2rem;
-
-        p.text {
-          font-size: 16px;
-          padding: 1em;
-        }
-
-        h2 {
-          padding: 1.3rem 0;
-          font-size: 28px;
-        }
-      }
-    }
-
-    .form {
-      input:not(input[type="submit"]) {
-        position: relative;
-        display: block;
-        padding-top: 1em;
-        all: unset;
-        background: transparent;
-        border: none;
-        border-bottom: 1px solid $main-c;
-        width: 90%;
-        color: $main-c;
-        padding: 5px;
-        // microsoft edge
-        appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-
-        &::placeholder {
-          position: relative;
-          color: inherit;
-        }
-      }
-
-      textarea {
-        margin-top: 80px;
-        background: transparent;
-        color: $main-c;
-        border: 1px solid $main-c;
-        width: 100%;
-        padding: 5px;
-        font-family: inherit;
-
-        &::placeholder {
-          color: $main-c;
-        }
-      }
-
-      input[type="submit"] {
-        color: $main-c;
-        font-size: 1rem;
-        margin-top: 10px;
-        padding: 5px 20px;
-        border: 1px solid $main-c;
-        @include border-radius(28px);
-        cursor: pointer;
+      .contact-describe{
+        padding: 20px 0;
+        color:$main-c;
       }
     }
   }
+}
 
-  .info {
-    margin-top: 10px;
-    font-size: 12px;
+.table-row{
+  display: flex;
+  justify-content: center;
+
+  table{
+    color:$main-c;
+
+    th{
+      text-align: center;
+      padding: 20px 0;
+      font-weight: 600;
+    }
   }
 }
