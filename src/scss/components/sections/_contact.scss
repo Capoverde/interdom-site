@@ -83,3 +83,28 @@
     }
   }
 }
+
+
+form{
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  gap: 10px;
+
+
+ input,
+ textarea{
+   padding: 5px;
+ }
+
+  .contact__form-box{
+    flex-basis: 45%;
+
+  }
+
+  .box-left,
+  .box-right{
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
