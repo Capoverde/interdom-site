@@ -640,7 +640,7 @@ Księgowość
   
   
   <!-- contact section -->
-  <section class="contact-section">
+  <section class="contact-section" id="contact">
     
   <h2 class="title" data-aos="fade-up">
     Kontakt
@@ -687,9 +687,6 @@ Księgowość
       </h3>
       <table>
         <tr>
-          <!-- <th>Dni i godziny pracy biura:</th> -->
-        </tr>
-        <tr>
          <td class="days">Poniedziałek</td>
          <td class="hours">08:00 - 16:00</td>
        <tr>
@@ -708,18 +705,28 @@ Księgowość
     </div>
   
     <div class="row message-row" data-aos="fade-up" data-aos-delay="1200">
+
+      <div class="contact-wrapper">
+        <h2 class="title">
+          Napisz do nas!
+        </h2>
         <form action="PUT">
           <div class="contact__form-box box-left">
             <input type="text" class="text" placeholder="Imię i Nazwisko">
-            <input type="email" name="mail" id="mail" placeholder="e-mail">
-            <input type="tel" name="phone" id="phone" placeholder="telefon">
+            <div class="row input-row">
+              <input type="email" name="mail" id="mail" placeholder="e-mail">
+              <input type="tel" name="phone" id="phone" placeholder="telefon">
+            </div>
             <input type="text" name="adres" id="adres" placeholder="adres nieruchomości">
           </div>
           <div class="contact__form-box box-right">
             <textarea name="meassage" id="meassage" cols="30" rows="10" placeholder="Wiadomość..."></textarea>
-            <input type="submit" value="wyślij" class="btn">
           </div>
         </form>
+        <div class="row send-row">
+          <input type="submit" value="wyślij" class="btn send-btn">
+        </div>
+      </div>
     </div>
   </section>
 
