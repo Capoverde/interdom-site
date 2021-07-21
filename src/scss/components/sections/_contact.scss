@@ -12,6 +12,11 @@
 
   p.text{
     text-align: center;
+
+    @include respond-below(md){
+      font-size: 16px;
+      padding: 0 20px;
+    }
   }
 
   .contact-icons{
@@ -29,6 +34,10 @@
       justify-content: center;
       align-items: center;
 
+      @include respond-below(md){
+        margin-top: 20px;
+      }
+
 
      .contact-link{
        padding: 20px 0;
@@ -38,7 +47,7 @@
        background: #2196f3;
        color: $white;
        padding: 10px;
-       @include fluidSize(10px, 28px);
+       @include fluidSize(26px, 28px);
        @include transition(all, 0.45s);
        @include border-radius(100%);
        display: flex;
@@ -78,9 +87,9 @@
     color:$main-c;
     width: 15%;
 
-    tr{
- 
-    }
+   @include respond-below(md){
+    width: 50%;
+   }
 
     .hours{
       text-align: right;

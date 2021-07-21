@@ -14,6 +14,7 @@
     p.text {
       @include respond-below(md) {
         font-size: 15px;
+        padding: 20px;
       }
     }
 

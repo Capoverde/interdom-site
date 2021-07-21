@@ -17,6 +17,10 @@ h2 {
 
 h3 {
   text-align: center;
+
+  @include respond-below(md){
+    padding: 0 20px;
+  }
 }
 
 .offer__article {
