@@ -18,6 +18,10 @@
     display: flex;
     justify-content: space-evenly;
 
+    @include respond-below(md){
+      flex-flow: column;
+    }
+
     .contact-box{
       display: flex;
       flex-basis: fill;
