@@ -49,6 +49,15 @@ a {
   }
 }
 
+a.rodo-link{
+  color: $main-c;
+  text-decoration: underline;
+  
+  &:hover {
+    color:$foreground-color;
+  }
+}
+
 p.text {
   @include fluidSize(10px, 16px);
 }
