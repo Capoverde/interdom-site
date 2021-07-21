@@ -64,6 +64,7 @@
       .contact-describe{
         padding: 20px 0;
         color:$main-c;
+        text-align: center;
       }
     }
   }
@@ -97,6 +98,13 @@
   }
 }
 
+.message-row{
+  @include respond-below(md){
+    display: flex;
+    justify-content: center;
+  }
+}
+
 
 .contact-wrapper{
   background: $link-color;
@@ -109,12 +117,21 @@
   h2.title{
     padding-bottom: 30px;
   }
+
+  @include respond-below(md){
+    padding: 60px;
+  }
 }
+
+
 form{
   margin: 0 auto;
   display: flex;
   gap: 40px;
 
+@include respond-below(md){
+  flex-flow: column wrap;
+}
 
   .input-row{
     display: flex;
@@ -122,9 +139,6 @@ form{
     justify-content: space-between;
   }
 
-textarea{
-  width: 100%;
-}
 
  input,
  textarea{
@@ -150,6 +164,7 @@ input,textarea{
   color:$main-c;
   &::placeholder{
     color:$main-c;
+    opacity: .7;
   }
 }
 
@@ -158,6 +173,10 @@ textarea{
   background:transparent;
   border: 1px solid darken($main-c, 30);
   width:110%;
+  
+  @include respond-below(md){
+    width: 100%;
+  }
 
 } 
 
@@ -187,6 +206,10 @@ textarea{
     color:$main-c;
     font-size: 12px;
     margin-left: 3%;
+
+    @include respond-below(md){
+      font-size: 9px;
+    }
   }
 
 
