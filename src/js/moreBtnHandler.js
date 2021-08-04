@@ -7,9 +7,5 @@ console.log(artList)
 for (const btn of moreBtn) {
   btn.addEventListener('click', e => {
     artList.forEach(el => el.classList.toggle('showList'))
-
-    console.log(e.target)
-    console.log(art)
-    console.log(artList)
   })
 }
