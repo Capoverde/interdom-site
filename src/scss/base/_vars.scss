@@ -7,18 +7,18 @@
 /* Paths */
 /* Grid setup */
 /* Colour palette */
-$black: #000;
-$white: #fff;
+$black: hsl(0, 0%, 0%);
+$white: hsl(0, 0%, 100%);
 
 $body-background-color: $white;
 $brand-color: $white;
-$foreground-color: #161616;
+$foreground-color: hsl(0, 0%, 9%);
 $caption-color: #464646;
-$accent-color: #999;
-$link-color: #3b5998;
+$accent-color: hsl(0, 0%, 60%);
+$link-color: hsl(221, 44%, 41%);
 $main-c: $white;
-$hero-color: #e2f6fa;
-
+$hero-color: hsl(190, 71%, 93%);
+$rescue-color: hsl(0, 100%, 49%);
 /* Components */
 
 // $header-bg: radial-gradient(#0f93cc 0%, #0b02ab 100%);
