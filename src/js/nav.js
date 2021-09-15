@@ -29,9 +29,7 @@ const links = document.querySelectorAll('.page-link')
 const navbar = document.querySelector('.page__nav')
 const x = window.matchMedia('(max-width: 990px)')
 
-// for (const link of links) {
-//   link.addEventListener('click', clickHandler)
-// }
+
 
 for (const link of links) {
   link.addEventListener('click', clickHandler)

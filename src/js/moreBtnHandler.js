@@ -17,6 +17,5 @@ for (const btn of moreBtn) {
     }else{
       moreBtn.forEach(e=>e.innerHTML = 'czytaj więcej')
     }
-   
   })
 }
