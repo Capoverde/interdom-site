@@ -48,5 +48,3 @@ function clickHandler (e) {
     behavior: 'smooth'
   })
 }
-
-// console.log(myNav.clientHeight)

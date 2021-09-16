@@ -4,6 +4,7 @@ import '../scss/app.scss'
 /* libraries */
 import './aos'
 import './slider.js'
+import './totopBtn'
 import $ from "jquery";
 
 /* components  */
