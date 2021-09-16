@@ -19,6 +19,7 @@
 /* Vendor */
 
 /* Components */
+@import "./components/buttons";
 @import "./components/nav";
 @import "./components/header";
 @import "./components/sections/offer";
@@ -26,6 +27,7 @@
 @import "./components/sections/rescue";
 @import "./components/sections/contact";
 @import "./components/sections/footer";
+
 
 /* Browser specific styles */
 @import "dirty/hacks";

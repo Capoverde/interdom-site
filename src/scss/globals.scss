@@ -199,35 +199,35 @@ footer {
   }
 }
 
-#totop {
-  position: fixed;
-  bottom: 2%;
-  right: -50%;
-  transform: translate(-50%, -50%);
-  display: block;
-  font-size: 20px;
-  color: $white;
-  background: $link-color;
-  padding: 5px 10px;
-  cursor: pointer;
-  -webkit-box-shadow: 1px 0px 16px 4px rgba(0, 0, 0, 0.63);
-  box-shadow: 1px 0px 16px 4px rgba(0, 0, 0, 0.63);
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  z-index: 10000;
-  @include transition(all, 0.3s);
+// #totop {
+//   position: fixed;
+//   bottom: 2%;
+//   right: -50%;
+//   transform: translate(-50%, -50%);
+//   display: block;
+//   font-size: 20px;
+//   color: $white;
+//   background: $link-color;
+//   padding: 5px 10px;
+//   cursor: pointer;
+//   -webkit-box-shadow: 1px 0px 16px 4px rgba(0, 0, 0, 0.63);
+//   box-shadow: 1px 0px 16px 4px rgba(0, 0, 0, 0.63);
+//   border-radius: 5px;
+//   -webkit-border-radius: 5px;
+//   -moz-border-radius: 5px;
+//   -ms-border-radius: 5px;
+//   -o-border-radius: 5px;
+//   z-index: 10000;
+//   @include transition(all, 0.3s);
 
-  @include respond-below(md) {
-    bottom: 5%;
-  }
-}
+//   @include respond-below(md) {
+//     bottom: 5%;
+//   }
+// }
 
-#totop.showTop {
-  right: 2%;
-}
+// #totop.showTop {
+//   right: 2%;
+// }
 
 //##################################################
 //################# swiper slider   ################

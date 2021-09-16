@@ -89,7 +89,7 @@
     width: 15%;
 
    @include respond-below(md){
-    width: 50%;
+    width: 60%;
    }
 
     .hours{
@@ -120,7 +120,7 @@
 
   @include respond-below(md){
     padding: 60px;
-    width: 75%;
+    width: 80%;
   }
 }
 
@@ -138,6 +138,10 @@ form{
     display: flex;
     gap:20px;
     justify-content: space-between;
+
+    @include respond-below(md){
+      flex-flow: column wrap;
+    }
   }
 
 
@@ -202,6 +206,9 @@ textarea{
   justify-content: space-between;
   align-items: center;
 
+  @include respond-below(md){
+    flex-flow: column;
+  }
 
   span.text{
     color:$main-c;
@@ -210,6 +217,8 @@ textarea{
 
     @include respond-below(md){
       font-size: 9px;
+      order: 2;
+      margin-top: 10px;
     }
   }
 

@@ -1,0 +1,13 @@
+#totop{
+ position: fixed;
+ bottom: 5%;
+ right: 5%;
+ color: $white;
+ width: 20px;
+ height: 20px;
+ z-index:10000;
+ background: $link-color;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
