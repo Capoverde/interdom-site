@@ -15,6 +15,11 @@
  @include transition(all,.35s);
  font-size: 30px;
  cursor: pointer;
+ 
+ @include respond-below(md){
+     opacity: .8;
+ }
+  
 }
 
 #totop.showTotop{
