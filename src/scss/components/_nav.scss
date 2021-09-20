@@ -229,7 +229,7 @@
 .menu-btn {
   position: fixed;
   top: 10%;
-  right: -6% !important;
+  right: -6%;
   transform: translate(-50%, -50%);
   padding: 20px 5px;
   display: flex;
@@ -241,7 +241,7 @@
   background: $link-color;
   transition: all 0.5s ease-in-out;
   overflow: hidden;
-  z-index: 10000;
+  z-index: 50000;
   display: none;
   -webkit-box-shadow: 0px 6px 13px -3px rgba(0, 0, 0, 0.95);
   box-shadow: 0px 6px 13px -3px rgba(0, 0, 0, 0.95);
@@ -259,6 +259,8 @@
     height: $burger-height;
     background: $main-c;
     border-radius: 5px;
+      margin-top: 12px;
+      margin-left: 6px;
     box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
     transition: all 0.5s ease-in-out;
 
