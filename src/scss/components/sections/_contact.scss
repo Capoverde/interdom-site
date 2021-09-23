@@ -119,7 +119,7 @@
   }
 
   @include respond-below(md){
-    padding: 60px;
+    padding: 20px;
     width: 80%;
   }
 }
@@ -132,6 +132,7 @@ form{
 
 @include respond-below(md){
   flex-flow: column wrap;
+  width:260px;
 }
 
   .input-row{
@@ -238,6 +239,11 @@ textarea{
     &:hover {
       background: #2196f3;
       box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    }
+
+    @include respond-below(md){
+      align-self: end;
+      padding: 8px 40px;
     }
   }
 }
