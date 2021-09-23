@@ -50,7 +50,7 @@ h3 {
     height: 200px;
 
     @include respond-below(md) {
-      height: 260px;
+      height: 300px;
     }
 
     p {

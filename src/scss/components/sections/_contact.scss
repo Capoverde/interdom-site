@@ -136,6 +136,7 @@ form{
 }
 
   .input-row{
+    position: relative;
     display: flex;
     gap:20px;
     justify-content: space-between;
@@ -246,4 +247,25 @@ textarea{
       padding: 8px 40px;
     }
   }
+}
+
+
+.valid{
+  color: hsl(120, 93%, 41%);
+}
+
+.invalid{
+  color: hsl(0, 100%, 50%);
+}
+
+.mail-val-text{
+ font-size: 10px;
+ position:absolute;
+ left: 22%;
+ top: 100%;
+ transform: translate(-50%,-50%);
+}
+
+.person-val-text{
+  font-size: 10px;
 }

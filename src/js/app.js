@@ -9,6 +9,7 @@ import $ from "jquery";
 
 /* components  */
 import './nav.js'
+import './form.js'
 import './moreBtnHandler.js'
 
 /* Your JS Code goes here */
