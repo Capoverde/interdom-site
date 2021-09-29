@@ -1,0 +1,14 @@
+.rodo-popup{
+    position: fixed;
+    left:0;
+    top:50%;
+    width: 60%;
+    height: 800px;
+    padding: 10px;
+    background: $link-color;
+    color:$brand-color;
+    font-size: 1rem;
+    overflow:scroll;
+    z-index:10000;
+    @include transition(all, .35s)
+}

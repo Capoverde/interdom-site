@@ -5,6 +5,7 @@ import '../scss/app.scss'
 import './aos'
 import './slider.js'
 import './totopBtn'
+import './rodoPopup'
 import $ from "jquery";
 
 /* components  */
