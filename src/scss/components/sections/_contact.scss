@@ -40,6 +40,7 @@
 
 
      .contact-link{
+       display: inline-block;
        padding: 20px 0;
        position: relative;
        width: 60px;
@@ -53,7 +54,7 @@
        display: flex;
        justify-content: center;
        align-items: center;
-       cursor:pointer;
+       cursor: pointer;
 
         &:hover {
           background: #2196f3;

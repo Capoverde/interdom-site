@@ -1,6 +1,6 @@
 const rodoLink = document.querySelector('.rodo-link')
 const rodo = document.getElementById('rodo')
-const span = document.getElementsByClassName("close")[0];
+const okBtn = document.getElementById("okRodoBtn");
 
 
 rodoLink.addEventListener('click', function(){
@@ -8,6 +8,6 @@ rodoLink.addEventListener('click', function(){
     rodo.classList.add('showRodo')
 })
 
-span.addEventListener('click', e => {
+okBtn.addEventListener('click', e => {
     rodo.classList.remove('showRodo')
 })

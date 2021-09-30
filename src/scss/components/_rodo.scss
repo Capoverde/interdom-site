@@ -53,7 +53,7 @@
   
   .rodo-body {
     background: $hero-color;
-    padding: 2px 16px;
+    padding:50px;
 }
   
   .rodo-footer {
@@ -65,6 +65,17 @@
 
     .rodo-consent-btn{
       cursor:pointer;
+      padding: 10px 40px;
+      color:$link-color;
+      border-color:$link-color;
+      @include transition(all, .35s);
+      -webkit-box-shadow: 0px 7px 20px 3px rgba(0,0,0,0.43); 
+      box-shadow: 0px 7px 20px 3px rgba(0,0,0,0.43);
+
+      &:hover {
+        border-color:$link-color;
+        transform: scale(.98);
+      }
     }
   }
 
