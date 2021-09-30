@@ -47,16 +47,29 @@
   
   .rodo-header {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: $link-color;
     color: white;
   }
   
-  .rodo-body {padding: 2px 16px;}
+  .rodo-body {
+    background: $hero-color;
+    padding: 2px 16px;
+}
   
   .rodo-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
+    padding: 16px;
+    background-color: $hero-color;
     color: white;
+    display: flex;
+    justify-content: center;
+
+    .rodo-consent-btn{
+      cursor:pointer;
+    }
+  }
+
+  .showRodo{
+      display: block;
   }
 
 // ======== ANIMATIONS ========== //
