@@ -11,7 +11,7 @@
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.4); 
   z-index:10000;
-  @include transition(all, .35s)
+  @include transition(all, .35s);
 }
 
 /* RODO Content */
@@ -21,34 +21,32 @@
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 80%;
+    width: 50%;
+    font-size: 12px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
+
+    @include respond-below(md){
+      width:70%;
+      height:200px;
+    }
   }
 
 
-  /* The Close Button */
-.close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
+
   .rodo-header {
     padding: 2px 16px;
     background-color: $link-color;
     color: white;
+
+    @include respond-below(md){
+      h2{
+        font-size: 14px;
+      }
+    }
   }
   
   .rodo-body {
