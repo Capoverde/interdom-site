@@ -11,3 +11,4 @@ rodoLink.addEventListener('click', function(){
 okBtn.addEventListener('click', e => {
     rodo.classList.remove('showRodo')
 })
+
