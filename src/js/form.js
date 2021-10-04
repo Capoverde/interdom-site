@@ -1,3 +1,5 @@
+const sendBtn = document.querySelector('.send-btn')
+
 // ######### Name & Lname validation ##########
 const personre = /^[a-zA-Z]+ [a-zA-Z]+$/
 
@@ -43,3 +45,9 @@ else{
 }
 
 mail.addEventListener('keyup', mailValid)
+
+const formValid = () =>{
+  if(personValid && mailValid){
+    // okBtn =true
+  }
+}

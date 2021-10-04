@@ -2,6 +2,7 @@ const rodoLink = document.querySelector('.rodo-link')
 const rodo = document.getElementById('rodo')
 const okBtn = document.getElementById("okRodoBtn");
 
+// okBtn = false
 
 rodoLink.addEventListener('click', function(){
     console.log('klik w rodo-link')
