@@ -31,3 +31,19 @@ L.tileLayer(isRetina ? retinaUrl : baseUrl, {
     maxZoom: 20,
     id: 'osm-bright',
 }).addTo(map);
+
+
+const markerIcon = L.icon({
+    iconUrl: `https://api.geoapify.com/v1/icon?size=xx-large&type=material&color=%233e9cfe&icon=group&apiKey=${myAPIKey}`,
+    iconSize: [31, 46], // size of the icon
+    iconAnchor: [15.5, 42], // point of the icon which will correspond to marker's location
+    popupAnchor: [0, -45] // point from which the popup should open relative to the iconAnchor
+  });
+  const zooMarker = L.marker([51.77474848785249, 19.456612669475565], {
+    icon: markerIcon
+  }).addTo(map);
+
+  const zooMarkerPopup = L.popup().setContent("This is Munich Zoo");
+// const zooMarker = L.marker([51.77474848785249, 19.456612669475565], {
+//   icon: markerIcon
+// }).bindPopup(zooMarkerPopup).addTo(map);
