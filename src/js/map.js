@@ -1,3 +1,6 @@
+
+// https://myprojects.geoapify.com/projects
+
 // --- DOM variables --- //
 
 // const map = document.querySelector('.my-map')
