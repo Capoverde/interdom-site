@@ -2,7 +2,7 @@
 
 // const map = document.querySelector('.my-map')
 const myAPIKey = "a6d4654b5cbc4269af75712542e0d453"
-var map = L.map("my-map").setView([ 51.7500000, 19.4666700], 10);
+var map = L.map("my-map").setView([ 51.77474848785249, 19.456612669475565], 18);
 
 
 
