@@ -6,6 +6,7 @@ import './aos'
 import './slider.js'
 import './totopBtn'
 import './rodoPopup'
+import './map'
 import $ from "jquery";
 
 /* components  */
