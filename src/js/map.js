@@ -26,10 +26,10 @@ let requestOptions = {
 
     // Add map tiles layer. Set 20 as the maximal zoom and provide map data attribution.
 L.tileLayer(isRetina ? retinaUrl : baseUrl, {
-    attribution: 'Powered by <a href="https://www.geoapify.com/" target="_blank">Geoapify</a> | © OpenStreetMap <a href="https://www.openstreetmap.org/copyright" target="_blank">contributors</a>',
+    // attribution: 'Powered by <a href="https://www.geoapify.com/" target="_blank">Geoapify</a> | © OpenStreetMap <a href="https://www.openstreetmap.org/copyright" target="_blank">contributors</a>',
     apiKey: myAPIKey,
     maxZoom: 20,
-    id: 'osm-bright',
+    id: 'positron-blue',
 }).addTo(map);
 
 
@@ -43,7 +43,24 @@ const markerIcon = L.icon({
     icon: markerIcon
   }).addTo(map);
 
-  const zooMarkerPopup = L.popup().setContent("This is Munich Zoo");
-// const zooMarker = L.marker([51.77474848785249, 19.456612669475565], {
-//   icon: markerIcon
-// }).bindPopup(zooMarkerPopup).addTo(map);
+  const firmMarkerPopup = L.popup().setContent("Interdom s.c.");
+const firmMaker = L.marker([51.77474848785249, 19.456612669475565], {
+  icon: markerIcon
+}).bindPopup(zooMarkerPopup).addTo(map);
+
+
+//  style
+
+// var map = new maplibregl.Map({
+//     container: 'my-map',
+//     style: 'https://maps.geoapify.com/v1/styles/positron-blue/style.json?apiKey=YOUR_API_KEY',
+//     id: 'positron-blue'
+// });
+
+//  map.setView([51.77474848785249, 19.456612669475565], 10);
+// L.tileLayer('https://maps.geoapify.com/v1/tile/positron-blue/{z}/{x}/{y}.png?apiKey=YOUR_API_KEY', {
+//   attribution: 'Powered by <a href="https://www.geoapify.com/" target="_blank">Geoapify</a> | © OpenStreetMap <a href="https://www.openstreetmap.org/copyright" target="_blank">contributors</a>',
+//   maxZoom: 15,
+//   id: 'positron-blue'
+// }).addTo(map);
+  

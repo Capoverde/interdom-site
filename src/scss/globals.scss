@@ -4,6 +4,7 @@ body {
   color: $foreground-color;
   font-family: "Poppins", sans-serif;
   @include antialiasing();
+  scroll-behavior: smooth;
 }
 
 nav,
